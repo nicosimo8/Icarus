@@ -1,0 +1,190 @@
+.mainStatusContainer, .loadWagonInputContainer {
+  display: flex;
+  flex-direction: row;
+  
+  border: 1px solid #727376;
+  border-radius: 0.7em;
+}
+
+.mainStatusContainer {
+  width: 70vw;
+
+  margin: 0em 0.5em;
+
+  background-color: white;
+}
+
+.loadWagonInputContainer {
+  justify-content: space-between;
+
+  margin: 0em 0.5em 1em 0.5em;
+  padding: 0.2em 1.8em;
+}
+
+.loadSealContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 0.2em;
+
+  color: #727376;
+  font-weight: 900;
+}
+
+.mainStatusContainer label {
+  justify-self: center;
+  align-self: flex-start;
+
+  padding-top: 1em;
+  padding-left: 0.5em;
+
+  font-weight: 700;
+  font-size: 0.77em;
+  text-align: left;
+  text-wrap: balance;
+}
+
+.mainStatusContainer input {
+  align-self: center;
+  justify-self: center;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0.5em 0.3em;
+  padding: 0.5em 0em;
+
+  background-color: #A9ABAE;
+  border-style: none;
+  border: 0.5px solid #6d6e70;
+  border-radius: 0.3em;
+
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.loadWagonInputContainer label {
+  flex: 1 0 10%;
+  justify-self: flex-start;
+  align-self: center;
+
+  color: #77D00F;
+  font-weight: 700;
+  text-align: left;
+}
+
+.loadWagonInputContainer input {
+  flex: 1 0 50%;
+
+  width: 100%;
+  margin: 0em 1em;
+  padding: 0.3em 1em;
+
+  background-color: rgba(0,0,0, 0);
+  color: #727376;
+
+  border: none;
+  border-style: none;
+
+  text-align: center;
+  font-weight: 900;
+}
+
+.loadWagonInputContainer img {
+  align-self: center;
+  width: 1em;
+  height: 1em;
+
+  margin-right: 0.5em;
+
+  cursor: pointer;
+}
+
+.loadSealContainer input {
+  margin-left: 0.2em;
+  padding: 0.2em 0em 0.2em 0.5em;
+
+  background-color: rgba(0,0,0, 0);
+  color: #727376;
+
+  border: 1px solid #727376;
+  border-radius: 1em;
+
+  text-align: left;
+  font-weight: bold;
+}
+
+.loadSealContainer label {
+  justify-self: center;
+  align-self: center;
+}
+
+.errorMessage {
+  justify-self: center;
+  align-self: center;
+
+  width: 100%;
+  margin: 0;
+  margin-top: -1em;
+  padding: 0;
+
+  color: red;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.loadWagonInputContainer:last-child {
+  flex: 1 0 100%;
+}
+
+.radioBtn {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+
+  margin-bottom: 0.5em;
+}
+
+.radioBtn label {
+  font-size: 0.8em;
+}
+
+.formInputContainer {
+  color: #727376;
+}
+
+@media (min-width:321px) and (max-width:1024px) {
+  .mainStatusContainer {
+    max-width: 40vw;
+  }
+
+  .mainStatusContainer input {
+    justify-self: flex-end;
+  }
+
+  .mainStatusContainer label {
+    justify-self: center;
+    font-size: 1.3em;
+  }
+
+}
+
+@media (min-width:1025px) {
+  .mainStatusContainer {
+    max-width: 30vw;
+  }
+
+  .mainStatusContainer input {
+    justify-self: flex-end;
+  
+    width: 40%;
+  }
+
+  .mainStatusContainer label {
+    justify-self: center;
+    font-size: 1.3em;
+  }
+}

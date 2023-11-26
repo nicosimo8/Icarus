@@ -1,0 +1,73 @@
+.loadSealsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadSealsWagonText {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+
+  font-weight: 700;
+}
+
+.loadSealsWagonTextTitle {
+  color: #60a49a;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+.loadSealsWagonTextValue {
+  color: #727376;
+  font-size: 1.5em;
+}
+
+.loadSealsLoadTitle {
+  align-self: center;
+
+  width: 100%;
+  padding: 0.5em 0em;
+  border-radius: 1em;
+
+  background-color: #77D00F;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+.loadSealsContainer form {
+  display: flex;
+  flex-direction: column;
+
+  height: 30vh;
+}
+
+.loadSealsContainer:nth-child(2) {
+  overflow-y: initial;
+}
+
+.loadSealsContainer form .loadSealsFormDivContainer {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 100%;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.loadSealsContainer form:first-child {
+  justify-self: center;
+  align-self: center;
+  
+  overflow-y: initial;
+}
+
+.loadSealsContainer form div:nth-child(-n + 12) {
+  margin: 0em 0em 0em 0em;
+}

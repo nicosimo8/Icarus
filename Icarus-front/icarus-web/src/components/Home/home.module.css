@@ -1,0 +1,207 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 1em;
+  margin-bottom: 0em;
+
+  background-color: #b7d990;
+}
+
+img {
+  width: 30%;
+  height: auto;
+}
+
+header p {
+  margin: 0;
+
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 0.7em;
+  color: #000000;
+}
+
+.headerImageLogo {
+  padding-left: 1em;
+}
+
+.headerDivContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerDivDate {
+  width: 20em;
+  padding-right: 1em;
+  font-size: 0.7em;
+}
+
+.headerDivUserContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  padding-top: 0.5em;
+}
+
+.headerDivUserContainer img {
+  width: 10%;
+  height: auto;
+  margin-right: 1em;
+
+  cursor: pointer;
+}
+
+.headerDivUserContainer p {
+  justify-self: center;
+  align-self: center;
+
+  padding-right: 1em;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainDivMessageContainer {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 1em;
+  margin-left: 1em;
+  padding-bottom: 5em;
+
+  text-align: center;
+}
+
+.mainDivWelcomeMessage {
+  margin: 0em;
+  font-weight: 700;
+}
+
+.mainDivWarningMessage {
+  margin: 0em;
+}
+
+.mainDivButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+}
+
+.mainButtonLoad {
+  width: 33%;
+
+  padding: 1em 1em;
+  margin-bottom: 2em;
+
+  border-radius: 1em;
+  background-color: #00b04c;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.mainBottomContainer {
+  display: flex;
+  flex-direction: row;
+
+  cursor: pointer;
+}
+
+@media (min-width:321px) and (max-width:1024px) {
+  header {
+    width: 100vw;
+  }
+  
+  header p {
+    align-self: flex-end;
+    font-size: 1em;
+  }
+  
+  .headerImageLogo {
+    width: 20%;
+  }
+  
+  .headerDivDate {
+    font-size: 1em;
+  }
+  
+  .mainDivMessageContainer {
+    justify-self: center;
+    align-self: center;
+
+    padding-bottom: 1em;
+  }
+
+  .mainDivButtonsContainer {
+    flex-direction: row;
+  }
+  
+  .mainButtonLoad {
+    width: 40%;
+  
+    padding: 2em 2em;
+
+    font-size: 1.2em;
+  }
+  
+  .mainSettingsContainer {
+    font-size: 1.2em;
+  }
+
+}
+
+@media (min-width:1025px) {
+  header {
+    width: 100vw;
+    height: 20vh;
+  }
+
+  header p {
+    align-self: flex-end;
+    font-size: 1em;
+  }
+  
+  .headerImageLogo {
+    width: 10em;
+  }
+  
+  .headerDivDate {
+    font-size: 1em;
+  }
+  
+  .mainDivMessageContainer {
+    justify-self: center;
+    align-self: center;
+
+    padding-bottom: 1em;
+  }
+  
+  .mainDivButtonsContainer {
+    flex-direction: row;
+  
+    width: 60%;
+  }
+  
+  .mainButtonLoad {
+    width: 40%;
+  
+    padding: 2em 2em;
+
+    font-size: 1.2em;
+  }
+  
+  .mainSettingsContainer {
+    font-size: 1.2em;
+  }
+}

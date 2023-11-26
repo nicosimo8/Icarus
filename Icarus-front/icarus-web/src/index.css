@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "TypoMontserrat";
+  src: url("./assets/fonts/TypoMontserrat/Montserrat-Regular.eot");
+  src: url("./assets/fonts/TypoMontserrat/Montserrat-Regular.woff") format("woff"),
+  url("./assets/fonts/TypoMontserrat/Montserrat-Regular.woff2") format("woff2"),
+  url("./assets/fonts/TypoMontserrat/Montserrat-Regular.svg") format("svg");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'TypoMontserrat', Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100vh;
+
+  background-color: #A9ABAE;
+}
+
+a, button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}

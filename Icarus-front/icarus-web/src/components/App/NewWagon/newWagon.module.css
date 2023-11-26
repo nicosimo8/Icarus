@@ -1,0 +1,22 @@
+.newWagonForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.newWagonForm:first-child Button {
+  flex: 1 0 100%;
+}
+
+.netResultContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+
+  color: #6d6e70;
+  text-transform: uppercase;
+  font-weight: 900;
+}

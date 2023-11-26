@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.5em;
+
+  border: 1px solid #727376;
+  border-radius: 1em;
+}
+
+.form fieldset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  margin-top: 0.5em;
+}
+
+.form input {
+  background-color: rgba(0,0,0, 0);
+  border: 1px solid #727376;
+  border-radius: 0.5em;
+}
+
+.form button {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}

@@ -1,0 +1,39 @@
+version: "3.9"
+services:
+  icarusfront:
+    build: ./Icarus-front
+    ports:
+      - "3000:3000"
+    links:
+      - icarusback
+    environment:
+      - REACT_APP_API_URL=https://icaro:4000
+
+  icarusback:
+    build: ./Icarus-backend
+    ports:
+      - "4000:4000"
+    links:
+      - icarusdb
+    environment:
+      - PORT=4000
+      - DB_HOST=icaro
+      - DB_PORT=3306
+      - DB_USER=dedalus
+      - DB_PASSWORD=dedalus1234
+      - DB_DATABASE=icaro
+
+  icarusdb:
+    image: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=Dedalus.1234
+      - MYSQL_USER=dedalus
+      - MYSQL_PASSWORD=dedalus1234
+      - MYSQL_DATABASE=icaro
+    volumes:
+      - icaro-data:/var/lib/mysql
+
+volumes:
+  icaro-data:

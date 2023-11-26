@@ -1,0 +1,18 @@
+FROM node:18
+
+RUN mkdir -p /home/app/back
+
+RUN chown -R node:node /home/app/back
+
+WORKDIR /home/app/back
+
+COPY --chown=node:node . ./
+
+USER node
+
+RUN npm install
+
+EXPOSE 4000
+
+# CMD ["node", "/home/app/back/src/index.js"]
+CMD ["npm", "start"]

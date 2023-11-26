@@ -1,0 +1,50 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0em 0.5em 0em 0.5em;
+}
+
+footer div img {
+  align-self: center;
+
+  width: 25%;
+}
+
+footer div p {
+  font-size: 0.7em;
+}
+
+.footerTrademark{
+  margin: 0em 0em 1em 0em;
+  font-size: 0.6em;
+}
+
+@media (min-width:321px) and (max-width:1024px) {
+  footer div img {
+    width: 20%;
+  }
+  
+  footer div p {
+    font-size: 1.2em;
+  }
+  
+  .footer-p-trademark{
+    font-size: 1em;
+  }
+}
+
+@media (min-width:1025px) {
+  footer div img {
+    justify-self: flex-start;
+  
+    width: 20%;
+  }
+}

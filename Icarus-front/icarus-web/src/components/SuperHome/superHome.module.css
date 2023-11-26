@@ -1,0 +1,83 @@
+.usersListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1em 1em;
+
+  border: 1px solid #727376;
+  border-radius: 1em;
+}
+
+.usersListTitleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  margin-top: 1em;
+}
+
+.usersListTitleContainer p {
+  margin-left: 1em;
+
+  color: #727376;
+  font-size: 1em;
+  font-weight: 900;
+  text-align: center;
+}
+
+.usersListTitleContainer button {
+  margin-right: 1em;
+}
+
+.usersListContainer ul {
+  width: 100%;
+  
+  min-width: 200px;
+  max-width: 80vw;
+  min-height: 200px;
+  max-height: 50vh;
+
+  margin: 1em 0em;
+
+  overflow: auto;
+  overflow-x: hidden;
+
+  border-radius: 1em;
+  background-color: white;
+}
+
+.usersListContainer li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  margin-top: 0.5em;
+
+  border-bottom: 1px solid #727376;
+}
+
+.usersListContainer li p {
+  justify-self: flex-start;
+
+  margin: 0em 0.5em;
+
+  color: #727376;
+}
+
+.usersListContainer img {
+  width: 1em;
+}
+
+@media (min-width:321px) and (max-width:1024px) {
+
+}
+
+@media (min-width:1025px) {
+
+}
