@@ -1,14 +1,15 @@
 # //SCRIPTS//
 # start volumes
-sudo start icaro-data
+sudo docker start icaro-data
 
 # start containers
-sudo start icarusdb
-sudo start icarusback
-sudo start icarusfront
+sudo docker start icarusdb
+sudo docker start icarusback
+sudo docker start icarusfront
 
 # connect to db
 sudo docker exec -it icarusdb mysql -p
+dedalus1234
 
 # create the db
 CREATE DATABASE IF NOT EXISTS icaro;
